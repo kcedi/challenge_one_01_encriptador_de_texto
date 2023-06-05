@@ -27,6 +27,9 @@ function encryptText() {
     // Ocultamos el texto del span
     document.querySelector('#hideText').style.display = 'none';
 
+    // Mostramos botón para copiar el texto encriptado
+    document.querySelector("#button-copiar").style.display = "inherit";
+
 }
 
 function decryptText() {
@@ -53,4 +56,15 @@ function decryptText() {
     // Ocultamos el texto del span
     document.querySelector('#hideText').style.display = 'none';
 
+    // Mostramos botón para copiar el texto desencriptado
+    document.querySelector("#button-copiar").style.display = "inherit";
+
+}
+
+function copyText() {
+
+    let content = document.querySelector('#outputText').innerHTML;
+    navigator.clipboard.writeText(content);
+    return false;
+      
 }
