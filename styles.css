@@ -9,7 +9,10 @@
 body {
 	background: #E5E5E5;
 	font-family: 'Inter', Arial, 'sans-serif';
-	min-height: calc(100% - 100px);
+}
+
+main {
+	min-height: 100vh;
 }
 
 #logo {
@@ -105,6 +108,7 @@ button {
 	display: none;
 }
 
+
 #footer {
 	background: #082B57;
 	color: #fff;
@@ -113,10 +117,12 @@ button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 3em;
 }
 
 #footer p {
 	align-self: center;
+	padding-bottom: 0.5em;
 }
 
 #footer p a {
@@ -138,4 +144,23 @@ button {
 		0 0 40px #1678F0,
 		0 0 55px #1678F0,
 		0 0 70px #1678F0;
+}
+
+
+
+/* ----------- Tablet ----------- */
+@media only screen and (min-width: 768px) {
+	#input-message .text-area {
+		min-height: 250px;
+	}
+
+	#input-message button {
+		display: inline-block;
+		width: 48%;
+	}
+
+	#input-message .button-encriptar {
+		margin-right: 4%;
+	}
+
 }
