@@ -1,0 +1,141 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #E5E5E5;
+	font-family: 'Inter', Arial, 'sans-serif';
+	min-height: calc(100% - 100px);
+}
+
+#logo {
+	padding: 4% 3%;
+}
+
+#input-message,
+#output-message {
+	margin: 3em 5%;
+}
+
+#input-message .text-area {
+	background: #E5E5E5;
+	border: none;
+	color: #0A3871;
+	font-family: 'Inter', Arial, 'sans-serif';
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 150%;
+	min-height: 200px;
+	width: 100%;
+	overflow-y: hidden;
+	outline: none;
+	resize: none;
+	word-wrap: break-word;
+}
+
+#input-message .text-area::placeholder {
+	color: #0A3871;
+}
+
+#input-message p {
+	color: #495057;
+	font-size: 12px;
+	margin-top: 5em;
+}
+
+button {
+	border: 1px solid #082B57;
+	border-radius: 24px;
+	font-size: 16px;
+	height: 67px;
+	margin: 0.7em auto;
+	transition: .7s ease;
+	width: 100%;
+}
+
+#input-message .button-encriptar {
+	background: #0A3871;
+	color: #fff;
+}
+
+#input-message .button-encriptar:hover {
+	background: #fff;
+	color: #0A3871;
+}
+
+#input-message .button-desencriptar {
+	color: #0A3871;
+}
+
+#input-message .button-desencriptar:hover,
+#output-message #button-copiar:hover {
+	background: #0A3871;
+	color: #fff;
+}
+
+#output-message div {
+	background: #fff;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	margin-top: 2.3em;
+	padding: 0.6em 0;
+	text-align: center;
+}
+
+#output-message .text-output p {
+	font-size: 20px;
+	font-weight: 700;
+	margin: .8em 0;
+	padding: 0 20px;
+}
+
+#output-message .text-output p span {
+	color: #495057;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+#output-message #button-copiar {
+	margin: 15px 15px;
+	width: 93%;
+	display: none;
+}
+
+#footer {
+	background: #082B57;
+	color: #fff;
+	height: 100px;
+	font-family: 'Roboto Mono', monospace;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#footer p {
+	align-self: center;
+}
+
+#footer p a {
+	color: #fff;
+	text-decoration: none;
+	transition: .4s ease;
+}
+
+#footer i {
+	padding-top: 10px;
+}
+
+#footer p a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 20px #1678F0,
+		0 0 30px #1678F0,
+		0 0 40px #1678F0,
+		0 0 55px #1678F0,
+		0 0 70px #1678F0;
+}
