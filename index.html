@@ -24,13 +24,13 @@
 			<label><textarea id="inputText" oninput="autoGrow(this)" class="text-area"
 					placeholder="Ingrese el texto aquí"></textarea></label>
 			<p><img src="img/admiracion.png" alt="Signo de admiración"> Solo letras minúsculas y sin acentos</p>
-			<button class="button-encriptar">Encriptar</button><button class="button-desencriptar">Desencriptar</button>
+			<button onclick="encryptText()" class="button-encriptar">Encriptar</button><button class="button-desencriptar">Desencriptar</button>
 		</section>
 
 		<section id="output-message">
 			<div class="text-output">
 				<p id="outputText">Ningún mensaje fue encontrado</p>
-				<p><span id="span">Ingresa el texto que desees encriptar o desencriptar.</span></p>
+				<p><span id="hideText">Ingresa el texto que desees encriptar o desencriptar.</span></p>
 				<button id="button-copiar">Copiar</button>
 			</div>
 		</section>
