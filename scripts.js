@@ -28,3 +28,29 @@ function encryptText() {
     document.querySelector('#hideText').style.display = 'none';
 
 }
+
+function decryptText() {
+
+    // Obtenemos el texto del elemento textarea
+    let text = document.querySelector("#inputText").value;
+    let salidaDeTexto = document.querySelector("#outputText");
+
+    const decrypt = {
+        "enter"   : "e",
+        "imes" : "i",
+        "ai"   : "a",
+        "ober" : "o",
+        "ufat" : "u"
+    };
+
+    text = text.replace(/enter|imes|ai|ober|ufat/g, match => decrypt[match]);
+    
+    // Escribimos el texto
+    salidaDeTexto.innerHTML = text;
+    salidaDeTexto.style.textAlign = "start";
+    salidaDeTexto.style.fontWeight = 400;
+
+    // Ocultamos el texto del span
+    document.querySelector('#hideText').style.display = 'none';
+
+}
