@@ -1,8 +1,3 @@
-function autoGrow(element) {
-    element.style.height = "5px";
-    element.style.height = (element.scrollHeight)+"px";
-}
-
 function encryptText() {
 
     // Obtenemos el texto del elemento textarea
@@ -23,8 +18,10 @@ function encryptText() {
     salidaDeTexto.innerHTML = text;
     salidaDeTexto.style.textAlign = "start";
     salidaDeTexto.style.fontWeight = 400;
+    salidaDeTexto.style.minHeight = "200px";
     
-    // Ocultamos el texto del span
+    // Ocultamos imagen (muñeco) y el texto del span
+    document.querySelector('#img-muneco').style.display = 'none';
     document.querySelector('#hideText').style.display = 'none';
 
     // Mostramos botón para copiar el texto encriptado
@@ -52,8 +49,10 @@ function decryptText() {
     salidaDeTexto.innerHTML = text;
     salidaDeTexto.style.textAlign = "start";
     salidaDeTexto.style.fontWeight = 400;
+    salidaDeTexto.style.minHeight = "200px";
 
-    // Ocultamos el texto del span
+    // Ocultamos imagen (muñeco) y el texto del span
+    document.querySelector('#img-muneco').style.display = 'none';
     document.querySelector('#hideText').style.display = 'none';
 
     // Mostramos botón para copiar el texto desencriptado

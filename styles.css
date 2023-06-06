@@ -34,7 +34,6 @@ main {
 	line-height: 150%;
 	min-height: 200px;
 	width: 100%;
-	overflow-y: hidden;
 	outline: none;
 	resize: none;
 	word-wrap: break-word;
@@ -114,15 +113,13 @@ button {
 	color: #fff;
 	height: 100px;
 	font-family: 'Roboto Mono', monospace;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	margin-top: 3em;
 }
 
 #footer p {
-	align-self: center;
-	padding-bottom: 0.5em;
+	text-align: center;
+	padding: 0.5em 0;
+	
 }
 
 #footer p a {
@@ -161,6 +158,53 @@ button {
 
 	#input-message .button-encriptar {
 		margin-right: 4%;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#img-muneco {
+		display: none;
+	}
+
+}
+
+/* ----------- Desktop ----------- */
+@media only screen and (min-width: 1024px) {
+	 #logo {
+		position: absolute;
+	}
+	
+	#input-message {
+		margin-left: 12%;
+		margin-top: 10%;
+		float: left;
+		width: 40%;
+	}
+
+	#input-message .text-area {
+		min-height: 300px;
+	}
+
+	#output-message {
+		width: 336px;
+		float: right;
+		margin-top: 1%;
+	}
+
+	#output-message .text-output {
+		min-height: 600px;
+		border: 1px solid black;
+	}
+
+	#output-message #button-copiar {
+		position: relative;
+		margin-top: 85%;
+	}
+
+	#footer {
+		clear: both;
 	}
 
 }

@@ -18,11 +18,11 @@
 <body>
 	<main>
 		<header>
-			<img src="img/logo.svg" id="logo" alt="Logo Alura">
+			<a href="index.html" title="Inicio"><img src="img/logo.svg" id="logo" alt="Logo Alura"></a>
 		</header>
 
 		<section id="input-message">
-			<label><textarea id="inputText" oninput="autoGrow(this)" class="text-area"
+			<label><textarea id="inputText" class="text-area"
 					placeholder="Ingrese el texto aquí"></textarea></label>
 			<p><img src="img/admiracion.png" alt="Signo de admiración"> Solo letras minúsculas y sin acentos</p>
 			<button onclick="encryptText()" class="button-encriptar">Encriptar</button><button onclick="decryptText()" class="button-desencriptar">Desencriptar</button>
@@ -30,6 +30,7 @@
 
 		<section id="output-message">
 			<div class="text-output">
+				<img id="img-muneco" src="img/muneco.svg" alt="Muñeco">
 				<p id="outputText">Ningún mensaje fue encontrado</p>
 				<p><span id="hideText">Ingresa el texto que desees encriptar o desencriptar.</span></p>
 				<button onclick="copyText()" id="button-copiar">Copiar</button>
